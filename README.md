@@ -1,7 +1,7 @@
 snooze-coffee
 =============
 
-[![schematics]](https://raw.github.com/hezhao/snooze-coffee/master/schematics-small.jpg)
+[![schematics](https://raw.github.com/hezhao/snooze-coffee/master/schematics-small.jpg)](https://raw.github.com/hezhao/snooze-coffee/master/schematics.jpg)
 
 Notes
 =====
