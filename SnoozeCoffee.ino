@@ -23,7 +23,7 @@ void setup()
   pinMode(coffeeSwitchPin, OUTPUT);
   pinMode(coffeeLedPin, INPUT_PULLUP);
   pinMode(alarmOutputPin, INPUT);
-  Serial.begin(9600);
+//  Serial.begin(9600);
   
   // turn off cofee machine
   digitalWrite(coffeeSwitchPin, HIGH);
@@ -36,7 +36,7 @@ void makeCoffee()
   int val = digitalRead(coffeeLedPin);
   if (val == HIGH) 
   {
-    Serial.println("make coffee!");
+//    Serial.println("make coffee!");
     
     // Digitally press push button
     digitalWrite(coffeeSwitchPin, LOW);
@@ -64,14 +64,18 @@ void parseCoffee(int pulseCount)
   // current alarm is off (snooze pressed)
   if ( lastAlarm == true && currentAlarm == false )
   {
-    Serial.println("Snooze!");
+//    Serial.println("Snooze!");
     makeCoffee();
   }
   
   // Alarm is going on
   else if ( lastAlarm == true && currentAlarm == true )
   {
-    Serial.println("Alarm!");
+//    Serial.println("Alarm!");
+    digitalWrite(ledPin, HIGH);
+    delay(100);
+    digitalWrite(ledPin, LOW);
+    delay(100);
   }
   
   // save alarm status
