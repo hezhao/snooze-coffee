@@ -3,8 +3,8 @@
  * Read 9.6v pulse from Pin 16 (Alarm Output) of LM8560, and send
  * LOW signal to coffee machine switch
  *
- * MCU Sony Dream Machine: EM78P153K
- * MCU Cuisinart Coffee Machine: UTC LM8560
+ * MCU Sony Dream Machine: UTC LM8560
+ * MCU Cuisinart Coffee Machine: EM78P153K
  * http://www.emc.com.tw/twn/database/Data_Sheet/8BIT/EM78P153K.pdf
  * http://www.unisonic.com.tw/datasheet/LM8560.pdf
  */
